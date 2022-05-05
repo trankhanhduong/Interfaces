@@ -21,4 +21,11 @@ public class Triangle extends Shape {
 		return Math.sqrt(p * (p-a) * (p-b) * (p-c));
 	
 }
+	@Override
+	public int compareTo(Shape o) {
+		// TODO Auto-generated method stub
+		if(this.chuVi() > o.chuVi()) return 1;
+		if(this.chuVi() < o.chuVi()) return -1;
+		return 0;
+	}
 }

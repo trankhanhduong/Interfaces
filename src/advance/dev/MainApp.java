@@ -17,8 +17,7 @@ public class MainApp {
       System.out.println("Nhap ban kinh");
       double bk = sc.nextDouble();
       sc.nextInt();
-
-     shapeManager.add(new Circle("Circle"+i ,bk));
+      shapeManager.add(new Circle("Circle"+i ,bk));
     }
     System.out.println("Nhap vao 2 hinh chu nhat");
     for (int i = 0; i < 2; i++) {
@@ -31,11 +30,9 @@ public class MainApp {
       shapeManager.add(new Rectangle("Rectangle" + i ,a ,b));
     }
     System.out.println("Nhap vao hinh tam giac ");
-    for (int i = 0; i < 2; i++) {
       System.out.println("Nhap a");
       double a = sc.nextDouble();
       sc.nextInt();
-
       System.out.println("Nhap b");
       double b = sc.nextDouble();
       sc.nextInt();
@@ -44,7 +41,8 @@ public class MainApp {
       sc.nextInt();
       shapeManager.add(new Triangle("Triangle",a ,b,c));
       shapeManager.print();
+      shapeManager.sort();
+      shapeManager.print();
 
-    }
   }
 }

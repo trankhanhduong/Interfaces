@@ -16,4 +16,11 @@ public class Rectangle extends Shape  {
 		// TODO Auto-generated method stub
 		return a * b;
 }
+	@Override
+	public int compareTo(Shape o) {
+		// TODO Auto-generated method stub
+		if(this.chuVi() > o.chuVi()) return 1;
+		if(this.chuVi() < o.chuVi()) return -1;
+		return 0;
+	}
 }

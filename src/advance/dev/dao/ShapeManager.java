@@ -2,6 +2,7 @@ package advance.dev.dao;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import advance.dev.models.Shape;
@@ -24,6 +25,12 @@ public class ShapeManager implements IShape {
 	}			
 	public Shape get(int index) {
 		return list.get(index);
+		
+	}
+	@Override
+	public void sort() {
+		// TODO Auto-generated method stub
+		Collections.sort(list);
 		
 	}
 
